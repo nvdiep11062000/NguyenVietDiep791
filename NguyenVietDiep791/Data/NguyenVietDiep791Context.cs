@@ -15,5 +15,7 @@ namespace NguyenVietDiep791.Data
         }
 
         public DbSet<NguyenVietDiep791.Models.PersonNVD791> PersonNVD791 { get; set; }
+
+        public DbSet<NguyenVietDiep791.Models.NVD0791> NVD0791 { get; set; }
     }
 }

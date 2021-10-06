@@ -1,0 +1,43 @@
+﻿@model NguyenVietDiep791.Models.NVD0791
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>NVD0791</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="NVDId" class="control-label"></label>
+                <input asp-for="NVDId" class="form-control" />
+                <span asp-validation-for="NVDId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NVDName" class="control-label"></label>
+                <input asp-for="NVDName" class="form-control" />
+                <span asp-validation-for="NVDName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NVDGender" class="control-label"></label>
+                <input asp-for="NVDGender" class="form-control" />
+                <span asp-validation-for="NVDGender" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
